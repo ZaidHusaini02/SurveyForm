@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="survey.css">
+    </head>
+    <body>
+        <h1>Membuat Survey Form</h1>
+
+        <!--Create Form-->
+        <form id="form">
+            <!--Details-->
+            <div class="form-control">
+                <label for="name" id="label-name">
+                    Name
+                </label>
+
+                <!--Input Type Text-->
+                <input type="text" id="name" placeholder="Enter Your Name"/>
+            </div>
+
+            <div class="form-control">
+                <label for="email" id="label-email">
+                    Email
+                </label>
+
+                <!--Input Type Email-->
+                <input type="email" id="email" placeholder="Enter Your Email"/>
+            </div>
+
+            <div class="form-control">
+                <label for="age" id="label-age">
+                    Age
+                </label>
+
+                <!--Input Type Text-->
+                <input type="text" id="age" placeholder="Enter Your Age"/>
+            </div>
+            <div class="form-control">
+                <label for="role" id="label-role">
+                    Opsi mana yang paling menggambarkan Anda?
+                </label>
+
+                <!--Dropdown options-->
+                <select name="role" id="role">
+                    <option value="mahasiswa">Mahasiswa</option>
+                    <option value="magang">Magang</option>
+                    <option value="professional">Professional</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label>
+                    Apakah Anda akan merekomendasikan Course ini
+                    ke teman?
+                </label>
+
+                <!--Input Type Radio Button-->
+                <label for="recommend-1">
+                    <input type="radio" id="recommend-1" name="recommend">Yes</input>
+                </label>
+                <label for="recommend-2">
+                    <input type="radio" id="recommend-2" name="recommend">No</input>
+                </label>
+                <label for="recommend-3">
+                    <input type="radio" id="recommend-3" name="recommend">Maybe</input>
+                </label>
+            </div>
+
+            <div class="form-control">
+                <label>Languages and Frameworks known
+                    <small>(Centang semua yang sesuai)</small>
+                </label>
+                <!--Input Type Checkbox-->
+                <label for="inp-1">
+                    <input type="checkbox" name="inp">C</input></label>
+                </label>
+                <label for="inp-2">
+                    <input type="checkbox" name="inp">C++</input></label>
+                </label>
+                <label for="inp-3">
+                    <input type="checkbox" name="inp">HTML</input></label>
+                </label>
+                <label for="inp-4">
+                    <input type="checkbox" name="inp">CSS</input></label>
+                </label>
+                <label for="inp-5">
+                    <input type="checkbox" name="inp">Java Script</input></label>
+                </label>
+                <label for="inp-6">
+                    <input type="checkbox" name="inp">PHP</input></label>
+                </label>
+                <label for="inp-7">
+                    <input type="checkbox" name="inp">Git</input></label>
+                </label>
+                <label for="inp-8">
+                    <input type="checkbox" name="inp">React</input></label>
+                </label>
+            </div>
+
+            <div class="form-control">
+                <label for="comment">
+                    Any comments or suggestions
+                </label>
+
+                <!--multi line text input control-->
+                <textarea name="comment" id="comment" placeholder="Enter Your comment here"></textarea>
+            </div>
+
+            <!--Multi line text input control-->
+            <button type="Submit" value="Submit">
+                Submit
+            </button>
+        </form>
+    </body>
+</html>
